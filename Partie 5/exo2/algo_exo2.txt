@@ -15,6 +15,8 @@ Fonction count_password(password, taille_password) : Str
     return taille_password
 Fin Fonction
 
+Afficher "pour arrêter vos saisies entrez: STOP"
+
 Debut while
 While password != "STOP"
     Demander password
