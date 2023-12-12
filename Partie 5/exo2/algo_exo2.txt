@@ -9,18 +9,20 @@ password: Str
 # ALGO #
 Debut
 
-Debut while
-While password != "STOP"
-    Demander password
-    count_password(password, taille_password)
-    
-Fin while
-
 Debut Fonction
 Fonction count_password(password, taille_password) : Str
     taille_password = len(password)
     return taille_password
 Fin Fonction
 
+Debut while
+While password != "STOP"
+    Demander password
+    count_password(password, taille_password)
+    i += count_password
+Fin while
 
+Afficher "Le nombre de lettre contenues dans chacun de vos mdp est de: ", i
+
+Fin
 
