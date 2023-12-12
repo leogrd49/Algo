@@ -3,7 +3,7 @@ Var:
 word: Str
 taille_word: int
 i: int
-word_stock: List[int]
+word_stock<Numérique>
 
 # ALGO #
 Debut
@@ -30,7 +30,7 @@ Tant que word != "STOP"
 
     sinon si word == "STOP"
         BREAK
-        
+
     Fin si
 Fin while
 
