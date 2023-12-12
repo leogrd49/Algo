@@ -23,11 +23,8 @@ Tant que word != "STOP"
 
     Demander word
     taille = count_word(word)
+    Ajouter taille à word_stock
     i += taille
-
-    si word == "STOP":
-        i -= 4
-
 
     Fin si
 Fin while

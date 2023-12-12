@@ -17,9 +17,6 @@ while word != "STOP":
         word_stock.append(taille)
         i += taille
 
-    elif word == "STOP":
-        break
-
 
 print(word_stock)
 print("Le total est de: ", i)
