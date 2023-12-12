@@ -8,8 +8,7 @@ word_stock<Numérique>
 # ALGO #
 Debut
 
-Debut Fonction
-Fonction count_word(word) -> int
+Fonction count_word(word) : int 
     taille_word = longeur(word)
     retourner taille_word
 Fin Fonction
@@ -19,8 +18,8 @@ word_stock = []
 
 Afficher "Pour arrêter vos saisies entrez: STOP"
 
-Debut while
 Tant que word != "STOP"
+    word = ""
     Demander word
 
     si word != "STOP":
@@ -28,13 +27,15 @@ Tant que word != "STOP"
         Ajouter taille à word_stock
         i += taille
 
-    sinon si word == "STOP"
-        BREAK
+(
+    sinon si word == "STOP":
+        i -= 4
+)
 
     Fin si
 Fin while
 
 Afficher "Le total est de: ", i
-Afficher "Liste des tailles de mots:", word_stock
+Afficher "Liste des tailles de mots: ", word_stock
 
 Fin
