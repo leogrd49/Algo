@@ -11,10 +11,14 @@ Debut
 Demander password
 
 Debut Fonction
-Fonction str_to_star(password, hide_password, count_password) : Str
-    count_password = len(password) #Trouver un systme pour compter la chaine de caractère
+Fonction str_to_star(password, hide_password, count_password)
+    
+    count_password: int
+    hide_password: caractère
+
+    count_password = len(password)
     hide_password = "*" * count_password
-    return hide_password: Str
+    return hide_password: caractère
 Fin Fonction
 
 Afficher str_to_star(password, hide_password, count_password)
