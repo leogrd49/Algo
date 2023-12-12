@@ -26,10 +26,12 @@ Tant que word != "STOP"
     Ajouter taille à word_stock
     i += taille
 
-    Fin si
 Fin while
 
-#Afficher "Le total est de: " + i
-Afficher "Liste des tailles de mots: " + word_stock
+i -= 4  #Pour remove la valeur de STOP
+Enlever la derniere entrée de word_stock 
+
+Afficher word_stock
+Afficher "Le total est de: " + i
 
 Fin

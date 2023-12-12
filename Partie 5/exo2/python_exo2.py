@@ -12,11 +12,13 @@ print("Pour arrêter vos saisies entrez: STOP")
 while word != "STOP":
     word = input("Entrer vos mots: ")
     
-    if word != "STOP":
-        taille = count_word(word)
-        word_stock.append(taille)
-        i += taille
+    taille = count_word(word)
+    word_stock.append(taille)
+    i += taille
 
+
+i -= 4
+word_stock.pop()
 
 print(word_stock)
 print("Le total est de: ", i)
