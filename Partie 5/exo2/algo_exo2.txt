@@ -15,27 +15,25 @@ Fin Fonction
 
 i = 0
 word_stock = []
+word = ""
 
 Afficher "Pour arrêter vos saisies entrez: STOP"
 
 Tant que word != "STOP"
-    word = ""
+
     Demander word
+    taille = count_word(word)
+    Ajouter taille à word_stock
+    i += taille
 
-    si word != "STOP":
-        taille = count_word(word)
-        Ajouter taille à word_stock
-        i += taille
-
-(
-    sinon si word == "STOP":
+    si word == "STOP":
         i -= 4
-)
+
 
     Fin si
 Fin while
 
-Afficher "Le total est de: ", i
-Afficher "Liste des tailles de mots: ", word_stock
+Afficher "Le total est de: " + i
+Afficher "Liste des tailles de mots: " + word_stock
 
 Fin
