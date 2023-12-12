@@ -1,0 +1,20 @@
+# EXO 1 #
+
+
+# INIT #
+Var:
+password: Str
+
+
+# ALGO #
+Debut
+Demander password
+
+Debut Fonction
+Fonction str_to_star(password, hide_password, count_password) : Str
+    count_password = password.len()
+    hide_password = "*" * count_password
+    return hide_password: Str
+Fin Fonction
+
+Afficher str_to_star()
