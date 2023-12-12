@@ -1,0 +1,12 @@
+Function:
+
+Debut Fonction
+Fonction <NomFonction> (type1 param1, TypeN paramN): [typeRetour]
+    <code de la fonction>
+    [retourne une valeur de meme type que <typeRetour>]
+Fin fonction
+
+
+ex:
+
+somme = fonction_name(param1, paramN)
