@@ -23,7 +23,6 @@ Tant que word != "STOP"
 
     Demander word
     taille = count_word(word)
-    Ajouter taille à word_stock
     i += taille
 
     si word == "STOP":
@@ -33,7 +32,7 @@ Tant que word != "STOP"
     Fin si
 Fin while
 
-Afficher "Le total est de: " + i
+#Afficher "Le total est de: " + i
 Afficher "Liste des tailles de mots: " + word_stock
 
 Fin
