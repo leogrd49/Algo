@@ -23,7 +23,10 @@ While word != "STOP"
     Demander word
     count_word(word, taille_word)
     i += count_word
-    Afficher i
+    
+    si word == "STOP"
+        i -= 4
+    Fin si
 Fin while
 
 Afficher "Le nombre de lettre contenues dans chacun de vos mdp est de: " + i
