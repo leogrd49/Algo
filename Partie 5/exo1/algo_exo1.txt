@@ -12,7 +12,7 @@ Demander password
 
 Debut Fonction
 Fonction str_to_star(password, hide_password, count_password) : Str
-    count_password = password.len()
+    count_password = len(password) #Trouver un systme pour compter la chaine de caractère
     hide_password = "*" * count_password
     return hide_password: Str
 Fin Fonction
