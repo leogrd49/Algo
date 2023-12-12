@@ -17,8 +17,8 @@ while word != "STOP":
         word_stock.append(taille)
         i += taille
 
-    else:
-        i += 0  
+    elif word == "STOP":
+        break
 
 
 print(word_stock)
